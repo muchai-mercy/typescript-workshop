@@ -86,3 +86,7 @@ const exception = (message: string): never => {
 }
 
 exception("Cannot redeclare block-scoped variable 'xyz'.")
+
+// Type Inference
+let b = 12;
+// b = "ahd";
