@@ -1,5 +1,5 @@
 export interface Profile {
-  profile: PersonalData,
+  profile: PersonalData;
   records: SecureData;
 }
 

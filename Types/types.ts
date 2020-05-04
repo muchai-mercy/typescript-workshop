@@ -29,16 +29,22 @@ const fruits: string[] = [
 const role: [boolean, string] = [true, "admin"];
 
 // object
-const dictionary: object = {
-  id: 19276283,
+const dictionary: User = {
+  id: 762527,
   isLoggedIn: true,
   name: "Kate J",
+}
+
+interface User {
+  id: number;
+  isLoggedIn: boolean;
+  name: string | undefined;
 }
 
 // Enum
 enum Sport {
   soccer, // explain values
-  hockey,
+  hockey = "hockey",
   basketball = "basketball"
 }
 
@@ -73,7 +79,7 @@ commonError(undefined);
 
 // null
 const profile = (firstName: string, lastName: string | null) => {
-  console.log( `I'm ${firstName} ${lastName}`)
+  console.log(`I'm ${firstName} ${lastName}`);
 }
 
 profile("Rainbow", null);
@@ -85,7 +91,7 @@ const exception = (message: string): never => {
   throw new Error(message);
 }
 
-exception("Cannot redeclare block-scoped variable 'xyz'.")
+exception("Cannot redeclare block-scoped variable")
 
 // Type Inference
 let b = 12;

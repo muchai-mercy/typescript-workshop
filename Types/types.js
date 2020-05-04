@@ -1,5 +1,8 @@
+"use strict";
+exports.__esModule = true;
 // Boolean
 var isAuthenticated = false;
+isAuthenticated = true;
 // Number
 var age = 102;
 age = 12;
@@ -23,7 +26,7 @@ var fruits = [
 var role = [true, "admin"];
 // object
 var dictionary = {
-    id: 19276283,
+    id: 762527,
     isLoggedIn: true,
     name: "Kate J"
 };
@@ -31,7 +34,7 @@ var dictionary = {
 var Sport;
 (function (Sport) {
     Sport[Sport["soccer"] = 0] = "soccer";
-    Sport[Sport["hockey"] = 1] = "hockey";
+    Sport["hockey"] = "hockey";
     Sport["basketball"] = "basketball";
 })(Sport || (Sport = {}));
 var mySport = Sport.basketball;
@@ -65,3 +68,7 @@ profile("Doctor", "Rainbow");
 var exception = function (message) {
     throw new Error(message);
 };
+exception("Cannot redeclare block-scoped variable");
+// Type Inference
+var b = 12;
+// b = "ahd";
