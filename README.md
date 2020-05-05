@@ -29,6 +29,18 @@
 #### Easy Onboarding
   When joining a new team, you can understand the codebase relationships and scope better when it’s in TS.
 
+
+#### Installation
+`npm install typescript -g`
+
+`npm install @types/node -g`
+
+
+#### Development
+  Run `tsc -- init` to create a `tsconfig.json` file and specify compiler options
+
+  Run `tsc -p tsconfig.json` to use the config file when compiling.
+
 #### Common Errors
 
 `Cannot redeclare block-scoped variable <>`
