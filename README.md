@@ -16,6 +16,8 @@
   Typescript shows errors at  compile time so you will rarely have any errors at runtime.
   Javascript code you often view your errors first at runtime.
   This makes your programming process clean and simple.
+  Run `tsc -- init` to create a `tsconfig.json` file and specify compiler options
+  Run `tsc -p tsconfig.json` to use the config file when compiling.
 
 ##### Scalability
   Typescript code is easier to scale.
