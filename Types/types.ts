@@ -23,7 +23,7 @@ const fruits: string[] = [
   "oranges",
   "lemons",
   "tangerine"
-]
+];
 
 // tuples
 const role: [boolean, string] = [true, "admin"];
@@ -37,6 +37,7 @@ const dictionary: User = {
 
 interface User {
   id: number;
+  email?: string;
   isLoggedIn: boolean;
   name: string | undefined;
 }
@@ -78,20 +79,33 @@ const commonError = (card: undefined) => {
 commonError(undefined);
 
 // null
-const profile = (firstName: string, lastName: string | null) => {
+const profile = (firstName: string, lastName?: string | null) => {
   console.log(`I'm ${firstName} ${lastName}`);
 }
 
-profile("Rainbow", null);
+profile("Rainbow");
 profile("Doctor", "Rainbow");
 
 
-// never is a return type for a function with never returns/throws an exception
+// never is a return type for a function with never returns
+// One with unreachable code
+// This would help with Exhaustive checks: Not all code paths return a value
+
+const exhaust = (key?: number | string) => {
+  if(typeof(key) === "number") {
+    return true;
+  } else if(typeof(key) === "string") {
+    return false
+  }
+  // Some code paths do not return a value
+  exception("Not all code paths return a value")
+}
+
 const exception = (message: string): never => {
   throw new Error(message);
 }
 
-exception("Cannot redeclare block-scoped variable")
+exhaust();
 
 // Type Inference
 let b = 12;

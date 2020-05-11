@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": ["dom", "es6"], // defines all built-in API declaration groups you want to use in your code
+    "allowJs": true,
+    "target": "es5",
+    // "outFile": "./dist/index.js",
+    "noImplicitAny": true,
+    "removeComments": true
+  },
+  // "files": [
+  //   "./Types/types.ts" // only compile these files
+  // ]
+  // "include": [
+  //   "src/**/*"
+  // ],
+  // "exclude": [
+  //   "node_modules",
+  //   "**/*.spec.ts"
+  // ]
+}
+
