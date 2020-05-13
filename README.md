@@ -28,7 +28,7 @@ At a design level, you’ll need to have designed types & interfaces early on.
 
 ##### Schema-less DBs/ No-SQL
 
-When using firebase/Mongo where your schemas are fluid, you can use TS to enforce types to your DB.
+When using firebase/Mongo where your schemas are fluid, you can use TS to enforce types to your DB on the codebase level.
 
 #### Easy Onboarding
 
